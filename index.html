@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/default_style.css">
+  <link rel="stylesheet" href="css/zip_encrypt.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="File encryption">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+	<div id="container">
+		<h2>Zaszyfruj pliki</h2>
+		<ol id="demo-container">
+			<li>
+				<label>
+					<span class="form-label">Hasło (opcjonalne)</span>
+					<input type="password" id="password-input" value="" data-ddg-inputtype="credentials.password.new">
+				</label>
+			</li>
+			<li>
+				<label>
+					<span class="form-label">Dodaj zawartość</span>
+					<button id="file-input-button">Dodaj pliki...</button>
+					<input type="file" multiple="" id="file-input" hidden="">
+				</label>
+			</li>
+			<li>
+				<label>
+					<span class="form-label">Zawartość</span>
+					<ul id="file-list" class="empty">
+					</ul>
+				</label>
+			</li>
+			<li>
+				<label>
+					<span class="form-label">Nazwa pliku</span>
+					<input type="text" id="filename-input" value="Download.zip" data-ddg-inputtype="identities.addressPostalCode">
+				</label>
+			</li>
+			<li>
+				<label>
+					<span class="form-label">Pobierz plik zip</span>
+					<button id="download-button" disabled="disabled">Pobierz</button>
+				</label>
+			</li>
+		</ol>
+
+	</div>
+	<script type="text/javascript" src="js/zip-full.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
+
+<footer class="footer">
+    <p>
+        This project is licensed under the
+        <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
+        It also includes third-party code licensed under the
+        <a href="https://github.com/gildas-lormeau/zip.js?tab=BSD-3-Clause-1-ov-file#readme" target="_blank">BSD 3-Clause License</a>.
+    </p>
+</footer>
+</body>
+
+</html>
